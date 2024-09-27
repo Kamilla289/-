@@ -6,10 +6,26 @@
 }
 
 @font-face {
-  font-family: 'Jost';
+  font-family: 'Jost Regular';
   src: url('../fonts/Jost-Regular.woff') format('woff');
   font-display: swap;
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost Medium';
+  src: url('../fonts/Jost-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost SemiBold';
+  src: url('../fonts/Jost-SemiBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -18,7 +34,7 @@ html {
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  font-family: "Jost Regular", sans-serif;
   margin: 0;
 }
 
@@ -175,4 +191,124 @@ body {
   font-weight: 500;
   line-height: 20.23px;
   color: #282739;
+}
+
+.container {
+  width: 1380px;
+  margin: auto;
+}
+
+.top-block {
+  width: 1380px;
+  height: 445px;
+  margin: auto;
+}
+
+.top-block-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-image: url('../img/top-block-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 445px;
+  padding-left: 136px;
+  border-radius: 10px;
+}
+
+.address-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.time-work {
+  margin: 0 0 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.34px;
+  color: #fff;
+}
+
+.geo-icon {
+  margin-right: 8px;
+}
+
+.info-address {
+  font-family: 'Jost Medium';
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.34px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.title {
+  font-family: 'Jost SemiBold';
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50.58px;
+  color: #fff;
+  width: 612px;
+  margin: 19px 0 7px 0;
+}
+
+.top-text {
+  font-family: 'Jost Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+  color: #fff;
+  margin: 0 0 28px 0;
+}
+
+.block-steps-wrapper {
+  height: 40px;
+  display: flex;
+  gap: 35px;
+  margin: 0 0 38px 0;
+}
+
+.block-step {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.step-text {
+  font-family: 'Jost Medium';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  width: 149px;
+  color: #fff;
+}
+
+.scooter-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button.top-block-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255);
+  border: none;
+  width: 159px;
+  height: 53px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6F73EE;
 }
