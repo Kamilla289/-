@@ -1,6 +1,6 @@
 @import url("normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -26,6 +26,14 @@
   src: url('../fonts/Jost-SemiBold.woff') format('woff');
   font-display: swap;
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -311,4 +319,251 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #6F73EE;
+}
+
+.page-post-test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.page-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 85px;
+}
+
+.post-title {
+  color: #282739;
+  width: 645px;
+}
+
+.page-text {
+  font-family: 'Jost Medium';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.8px;
+  color: #282739;
+}
+
+.page-post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-post-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.page-post-item::before {
+  content: url('../img/CheckCircle.svg');
+  display: inline-block;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.bold-item {
+  font-family: 'Jost Medium';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-right: 6px;
+}
+
+.page-content-study {
+  justify-content: flex-start;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.page-image {
+  margin-right: 10px;
+}
+
+.models-cards {
+  display: flex;
+  gap: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.models-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.models-title {
+  color: #282739;
+  width: 732px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.model-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 255px;
+  border-radius: 10px;
+  border: 1.5px solid #EAEBED;
+}
+
+.card-image {
+  background-image: url('../img/model.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 231px;
+  padding: 10px 10px 0 10px;
+  width: 255px;
+}
+
+.model-icon-button {
+  display: flex;
+  justify-content: space-between;
+  width: 235px;
+}
+
+.hit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EE685F;
+  width: 41px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.new-hit {
+  background-color: #75D14A;
+  width: 63px;
+  height: 25px;
+}
+
+.hit-text {
+  font-family: 'Jost Medium';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17.34px;
+  color: #fff;
+}
+
+.compare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  padding: 20px 25px;
+}
+
+.title-card {
+  font-family: 'Jost Medium';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26.01px;
+  color: #282739;
+  width: 206px;
+  margin: 0 0 20px 0;
+}
+
+.character {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.prop-item {
+  display: flex;
+  align-items: center;
+  width: 93px;
+  height: 18px;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.prop-item:nth-child(1), .prop-item:nth-child(3) {
+  margin-right: 19px;
+}
+
+.prop-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  color: #5D6C7B;
+  }
+
+.block-shop {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 19px;
+}
+
+.block-price {
+  margin-right: 25px;
+}
+
+.old-price {
+  font-family: 'Jost Medium';
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17.34px;
+  color: #5D6C7B;
+  margin: 0;
+}
+
+.new-price {
+  font-family: 'Jost SemiBold';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28.9px;
+  color: #282739;
+  margin: 0;
+}
+
+.busket-shop, .heart-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.3px solid #EAEBED;
+}
+
+.heart-product {
+  margin-left: 10px;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #6F73EE;
+  border: none;
+  width: 206px;
+  height: 37px;
+  font-size: 12px;
+  font-weight: 400;
+  color:  #ffffff;
 }
