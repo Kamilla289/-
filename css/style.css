@@ -898,4 +898,96 @@ body {
   color: #282739;
 }
 
+.modal {
+  display: flex;
+  max-width: 790px;
+  max-height: 590px;
+  margin: auto;
+  border: 1px solid #282739; /* чтоб видно было */
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 40px 57px 37px 40px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.modal-wrapper {
+  width: 263px;
+}
+
+.modal-title {
+  font-family: 'Jost SemiBold';
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 36.13px;
+  color: #282739;
+  margin: 0 0 9px 0;
+}
+
+.modal-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #282739;
+  margin: 0 0 29px 0;
+}
+
+.modal-text-before {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.23px;
+  color: #282739;
+  margin: 0 0 86px 0;
+}
+
+.modal-form-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.34px;
+  color: #5D6C7B;
+  margin: 0 0 20px 0;
+}
+
+.modal-form-button {
+  background-color: #6F73EE;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  height: 53px;
+  border-radius: 5px;
+  margin: 20px 0 16px 0;
+}
+
+.notify-modal-text {
+  color: #282739;
+  margin: 0;
+  width: 244px;
+}
+
+.link-text-policy {
+  text-decoration: none;
+  color: #6F73EE;
+}
+
+.notify-modal {
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-dialog-thanks {
+  align-items: center;
+}
 

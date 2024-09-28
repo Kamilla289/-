@@ -314,7 +314,7 @@
             <button type="submit" class="button cta-form-button">Оставить заявку на тест-драйв</button>
           </div>
             <div class="notify">
-              <input type="checkbox" id="checkbox1">
+              <input type="checkbox" id="checkbox1" class="checkbox-notify">
               <p class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                 <a href="#" class="link-text">политикой конфиденциальности</a></p>
             </div>
@@ -463,4 +463,50 @@
     </div>
   </div>
 </footer>
+
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-wrapper">
+        <a href="#" class="modal-close">
+          <img src="img/close.svg" alt="закрыть" class="modal-close-image">
+        </a>
+        <h2 class="modal-title">ЗАПИШИТЕСЬ НА ТЕСТ-ДРАЙВ ЭЛЕКТРОСАМОКАТА</h2>
+        <p class="modal-text">и подберите модель для себя</p>
+        <p class="modal-text-before">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+          <form class="modal-form">
+            <p class="modal-form-text">Как с вами удобнее связаться?</p>
+            <div class="input-group-wrapper input-group-vertical">
+              <div class="input-group modal-input-group">
+                <input id="user-phone-footer" name="userphone" type="tel" class="input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
+              </div>
+            </div>
+            <div class="modal-form-footer">
+              <button type="submit" class="button modal-form-button">Оформить предзаказ</button>
+              <div class="notify notify-modal">
+                <input type="checkbox" id="checkbox1" class="checkbox-notify">
+                  <p class="notify-text notify-modal-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
+                    <a href="#" class="link-text-policy">политикой конфиденциальности</a></p>
+              </div>
+            </div>
+          </form>
+    </div>
+      <img src="img/modal-image.png" alt="девушка на скутере" class="modal-image">
+  </div>
+</div>
+ <!-- Временное расположение -->
+ <div class="modal modal-thanks">
+    <div class="modal-dialog modal-dialog-thanks">
+      <div class="modal-wrapper">
+        <a href="#" class="modal-close">
+          <img src="img/close.svg" alt="закрыть" class="modal-close-image">
+        </a>
+        <h2 class="modal-title">Спасибо за заявку!</h2>
+        <p class="modal-text modal-text-thanks">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+      </div>
+        <img src="img/modal-image.png" alt="девушка на скутере" class="modal-image">
+    </div>
+ </div>
+<!-- Временное расположение -->
+
+<script src="js/main.js"></script>
 </body>
