@@ -648,3 +648,39 @@ body {
   bottom: 0;
   right: 180px;
 }
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  background-color: #6F73EE;
+  margin: auto;
+}
+
+.title-footer-top {
+  font-family: 'Jost SemiBold';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26.01px;
+  color:  #ffffff;
+  max-width: 445px;
+  margin: 24px 95px 21px 0;
+}
+
+.input-email {
+  width: 410px;
+  height: 53px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 15px 0 15px 25px;
+}
+
+.input-email::placeholder {
+  color:  #ffffff;
+}
+
+.button.email-form-button {
+  width: 140px;
+}
