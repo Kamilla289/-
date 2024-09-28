@@ -102,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110px;
+  height: 98px;
 }
 
 .logo-header {
@@ -210,6 +210,7 @@ body {
   width: 1380px;
   height: 445px;
   margin: auto;
+  margin-top: 12px;
 }
 
 .top-block-content {
@@ -335,9 +336,12 @@ body {
   gap: 85px;
 }
 
+
 .post-title {
   color: #282739;
   width: 645px;
+  margin-top: 29px;
+  margin-bottom: 30px;
 }
 
 .page-text {
@@ -352,6 +356,10 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.post-2 {
+  margin-left: 10px;
 }
 
 .page-post-item {
@@ -381,11 +389,7 @@ body {
 .page-content-study {
   justify-content: flex-start;
   margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.page-image {
-  margin-right: 10px;
+  margin-bottom: 82px;
 }
 
 .models-cards {
@@ -407,6 +411,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .model-card {
@@ -470,7 +475,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 255px;
-  padding: 20px 25px;
+  padding: 18px 25px;
 }
 
 .title-card {
@@ -512,8 +517,8 @@ body {
 .block-shop {
   display: flex;
   align-items: center;
-  margin-top: 6px;
-  margin-bottom: 19px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .block-price {
@@ -577,9 +582,9 @@ body {
   background-color: #F4F7FB;
   width: 1380px;
   height: 445px;
-  margin-top: 51px;
+  margin-top: 100px;
   border-radius: 10px;
-  padding: 88px 0 78px 135px;
+  padding: 71px 0 78px 135px;
 }
 
 .form-footer-text {
@@ -588,6 +593,7 @@ body {
 
 .footer-title {
   color: #282739;
+  margin-bottom: 32px;
 }
 
 .form-text {
@@ -596,6 +602,7 @@ body {
   font-weight: 500;
   line-height: 23.12px;
   color: #282739;
+  margin-bottom: 20px;
 }
 
 .input-group-wrapper {
@@ -608,7 +615,7 @@ body {
   height: 53px;
   border-radius: 5px;
   border: 1px solid #EAEBED;
-  padding: 15px 0 15px 25px;
+  padding: 15px 0 15px 27px;
 }
 
 .cta-form-button {
@@ -626,7 +633,7 @@ body {
 
 .notify {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   width: 335px;
 }
 
@@ -665,7 +672,7 @@ body {
   line-height: 26.01px;
   color:  #ffffff;
   max-width: 445px;
-  margin: 24px 95px 21px 0;
+  margin: 25px 95px 21px 0;
 }
 
 .input-email {
@@ -701,7 +708,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 46px;
-  margin-bottom: 75px;
+  margin-bottom: 67px;
 }
 
 .footer-menu-title {
@@ -732,11 +739,19 @@ body {
 }
 
 .footer-menu-column-2 {
-  columns: 2 156px;
+  columns: 2 140px;
+}
+
+.wrapper-contact {
+  margin-left: 32px;
+}
+
+.column-contact {
+  columns: 2 166px;
 }
 
 .footer-menu-column {
-  margin-left: 125px;
+  margin-left: 90px;
 }
 
 .contact-item {
@@ -755,7 +770,7 @@ body {
 }
 
 .list-call-center {
-  margin-right: 40px;
+  margin-right: 18px;
 }
 
 .mobile-phone-footer {
@@ -770,12 +785,12 @@ body {
 .time-work-footer {
   font-size: 12px;
   font-weight: 400;
-  line-height: 17.34px;
+  line-height: 11.34px;
   color: #5D6C7B;
 }
 
 .add-link {
-  margin-left: 75px;
+  margin-top: 3px;
 }
 
 .add-link-text {
@@ -797,7 +812,7 @@ body {
 .buttons-add {
   display: flex;
   align-items: center;
-  margin: 36px 0 34px 0;
+  margin: 36px 0 29px 0;
 }
 
 .logo-footer {
@@ -860,7 +875,7 @@ body {
 .base-footer {
   display: flex;
   align-items: center;
-  padding: 17.32px 0 18.32px 0;
+  padding: 4.32px 0 18.32px 0;
 }
 
 .base-footer-doc {
@@ -883,6 +898,7 @@ body {
   display: flex;
   gap: 4.87px;
   margin-right: 37.25px;
+  margin-top: 6px;
 }
 
 .online-chat {
@@ -898,17 +914,21 @@ body {
   color: #282739;
 }
 
+.chat-button {
+  margin-top: 6px;
+}
+
 .modal {
   display: flex;
   max-width: 790px;
   max-height: 590px;
   margin: auto;
-  border: 1px solid #282739; /* чтоб видно было */
 }
 
 .modal-dialog {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
   position: relative;
   padding: 40px 57px 37px 40px;
@@ -916,12 +936,12 @@ body {
 
 .modal-close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 10px;
+  right: 12px;
 }
 
 .modal-wrapper {
-  width: 263px;
+  width: 285px;
 }
 
 .modal-title {
@@ -930,7 +950,7 @@ body {
   font-weight: 600;
   line-height: 36.13px;
   color: #282739;
-  margin: 0 0 9px 0;
+  margin: 0 0 8px 0;
 }
 
 .modal-text {
@@ -938,7 +958,7 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #282739;
-  margin: 0 0 29px 0;
+  margin: 0 0 25px 0;
 }
 
 .modal-text-before {
@@ -946,7 +966,7 @@ body {
   font-weight: 400;
   line-height: 20.23px;
   color: #282739;
-  margin: 0 0 86px 0;
+  margin: 0 0 88px 0;
 }
 
 .modal-form-text {
@@ -954,7 +974,7 @@ body {
   font-weight: 400;
   line-height: 17.34px;
   color: #5D6C7B;
-  margin: 0 0 20px 0;
+  margin: 0 0 17px 0;
 }
 
 .modal-form-button {
@@ -965,10 +985,15 @@ body {
   line-height: 23.12px;
   text-align: center;
   color: #FFFFFF;
-  width: 100%;
+  width: 92%;
   height: 53px;
   border-radius: 5px;
-  margin: 20px 0 16px 0;
+  margin: 20px 0 0px 0;
+}
+
+.notify-modal {
+  margin-left: 17px;
+  margin-top: 16px;
 }
 
 .notify-modal-text {
@@ -980,6 +1005,11 @@ body {
 .link-text-policy {
   text-decoration: none;
   color: #6F73EE;
+}
+
+.modal-image {
+  height: 497px;
+  margin-bottom: 8px;
 }
 
 .notify-modal {
