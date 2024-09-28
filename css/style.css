@@ -684,3 +684,218 @@ body {
 .button.email-form-button {
   width: 140px;
 }
+
+
+.footer-bottom-block {
+  background-color: #F4F7FB;
+  width: 1440px;
+  margin: auto;
+}
+
+.container-footer-bottom {
+  background-color: #F4F7FB;
+  width: 1110px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+  margin-bottom: 75px;
+}
+
+.footer-menu-title {
+  font-family: 'Jost Medium';
+  color: #282739;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.01px;
+  margin: 0 0 17px 0;
+}
+
+.footer-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.23px;
+  color: #5D6C7B;
+}
+
+.footer-menu-column-2 {
+  columns: 2 156px;
+}
+
+.footer-menu-column {
+  margin-left: 125px;
+}
+
+.contact-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.34px;
+  color: #282739;
+}
+
+.footer-menu-item.contact-item {
+  margin-bottom: 5px;
+}
+
+.footer-menu-item.mobile-phone-footer {
+  margin-bottom: 7px;
+}
+
+.list-call-center {
+  margin-right: 40px;
+}
+
+.mobile-phone-footer {
+  font-family: 'Jost Medium';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.12px;
+  color: #282739;
+  text-decoration: none;
+}
+
+.time-work-footer {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.34px;
+  color: #5D6C7B;
+}
+
+.add-link {
+  margin-left: 75px;
+}
+
+.add-link-text {
+  font-family: 'Jost Medium';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17.34px;
+  color: #6F73EE;
+  text-decoration: none;
+}
+
+.seporator {
+  border-color: #5D6C7B;
+  border-bottom: none;
+  opacity: 15%;
+  margin: 0;
+}
+
+.buttons-add {
+  display: flex;
+  align-items: center;
+  margin: 36px 0 34px 0;
+}
+
+.logo-footer {
+  margin-right: 59px;
+}
+
+.button-trans-app {
+  margin-left: 10px;
+  margin-right: 250px;
+}
+
+.social-link-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link-button {
+  text-decoration: none;
+}
+
+.social-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:"logo title title" "logo text text";
+  column-gap: 13px;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.svg-social {
+  grid-area: logo;
+}
+
+.social-title {
+  grid-area: title;
+  align-self: end;
+  font-family: 'Jost Medium';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.23px;
+  color: #282739;
+  text-decoration: none;
+}
+
+.social-number {
+  grid-area: text; 
+  align-self: start;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14.45px;
+  color: #5D6C7B;
+  text-decoration: none;
+}
+
+.base-footer {
+  display: flex;
+  align-items: center;
+  padding: 17.32px 0 18.32px 0;
+}
+
+.base-footer-doc {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.34px;
+  color: #5D6C7B;
+}
+
+.requisites {
+  margin-right: 44px;
+}
+
+.policy {
+  margin-right: 378px;
+}
+
+.pay {
+  display: flex;
+  gap: 4.87px;
+  margin-right: 37.25px;
+}
+
+.online-chat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.chat-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.23px;
+  color: #282739;
+}
+
+
