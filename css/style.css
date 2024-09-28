@@ -412,7 +412,6 @@ body {
 .model-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: 255px;
   border-radius: 10px;
   border: 1.5px solid #EAEBED;
@@ -566,4 +565,86 @@ body {
   font-size: 12px;
   font-weight: 400;
   color:  #ffffff;
+}
+
+.form-footer {
+  margin-bottom: 100px;
+}
+
+.form-footer-content {
+  display: flex;
+  position: relative;
+  background-color: #F4F7FB;
+  width: 1380px;
+  height: 445px;
+  margin-top: 51px;
+  border-radius: 10px;
+  padding: 88px 0 78px 135px;
+}
+
+.form-footer-text {
+  display: flex;
+}
+
+.footer-title {
+  color: #282739;
+}
+
+.form-text {
+  font-family: 'Jost Medium';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.12px;
+  color: #282739;
+}
+
+.input-group-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.input-phone {
+  width: 263px;
+  height: 53px;
+  border-radius: 5px;
+  border: 1px solid #EAEBED;
+  padding: 15px 0 15px 25px;
+}
+
+.cta-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #6F73EE;
+  border: none;
+  width: 258px;
+  font-size: 16px;
+  font-weight: 400;
+  color:  #ffffff;
+}
+
+.notify {
+  display: flex;
+  gap: 12px;
+  width: 335px;
+}
+
+.notify-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #282739;
+  margin-top: 20px;
+}
+
+.link-text {
+  color: #282739;
+}
+
+.footer-form-image {
+  position: absolute;
+  height: 494px;
+  bottom: 0;
+  right: 180px;
 }
