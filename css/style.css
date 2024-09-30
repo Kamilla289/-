@@ -119,6 +119,54 @@ body {
   border-radius: 5px;
   padding: 14px 18px 15px 15px;
   margin-right: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.button-catalog:hover,
+.button-catalog:focus-visible {
+  background-color: #323586;
+}
+
+.menu-burger {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 0.5lh;
+  background-color: #ebecff;
+  overflow: hidden;
+  border-radius: 10px;
+  line-height: 0;
+  color: transparent;
+  transition: line-height 0.5s, color 0.5s;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu-burger-item {
+  overflow: hidden;
+}
+
+.menu-burger-link {
+  display: block;
+  padding: 0.5lh 40px;
+  text-decoration: none;
+  color: #282739;
+}
+
+.menu-burger-link:hover,
+.menu-burger-link:focus-visible {
+  background-color: #6F73EE;
+}
+
+.button-catalog.active ~ .menu-burger {
+  line-height: 1.2;
+  color: currentColor;
 }
 
 .toggle {
@@ -445,6 +493,26 @@ b {
   display: flex;
   justify-content: space-between;
   width: 235px;
+}
+
+svg {
+  display: block;
+  width: 16.8px;
+  height: auto;
+}
+
+#svg_1, #svg_2, #svg_3, #svg_4 {
+  fill: transparent; 
+  stroke: #6F73EE;
+  stroke-width: 1.5px;
+  cursor: pointer;
+  transition: fill 0.3s;
+  transition: stroke 0.3s;
+}
+
+#svg_1.filled, #svg_2.filled, #svg_3.filled, #svg_4.filled {
+  fill: #ff0000;
+  stroke: #ff0000;
 }
 
 .hit {
