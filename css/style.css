@@ -129,7 +129,7 @@ body {
 
 .button-catalog:hover,
 .button-catalog:focus-visible {
-  background-color: #323586;
+  background-color: #5236b9;
 }
 
 .menu-burger {
@@ -1110,7 +1110,7 @@ svg {
 }
 
 /* hover эффекты */
-.header-top-menu:hover, .mobile-phone:hover, .shop-text:hover, .footer-menu-link:hover, .mobile-phone-footer:hover, .base-footer-doc:hover {
+.header-top-menu:hover, .mobile-phone:hover, .shop-text:hover, .footer-menu-link:hover, .mobile-phone-footer:hover, .base-footer-doc:hover, .link-text:hover {
   color: #6F73EE;
 }
 
@@ -1118,12 +1118,21 @@ svg {
   background-color: #e8e8f0;
 }
 
-.add-link-text:hover {
+.add-link-text:hover, .link-text-policy:hover {
   text-decoration: underline;
 }
 
 .button:hover, .searche-button:hover {
   cursor: pointer;
+}
+
+.searche-button:hover, .card-button:hover, .cta-form-button:hover, .modal-form-button:hover {
+  background-color: #5236b9;
+}
+
+.top-block-button:hover {
+  background-color: #5236b9;
+  color: #fff;
 }
 
 @media(max-width: 1380px) {
@@ -1334,6 +1343,31 @@ svg {
   }
   .modal-form-button {
     width: 200px;
+  }
+  /* hover эффекты */
+  .header-top-menu:hover, .footer-menu-link:hover, .base-footer-doc:hover {
+    color: #5D6C7B;
+  }
+
+  .mobile-phone:hover, .mobile-phone-footer:hover, .link-text:hover {
+    color: #282739;
+  }
+  .social-wrapper:hover {
+    background-color: #fff;
+  }
+  .add-link-text:hover, .link-text-policy:hover {
+    text-decoration: none;
+  }
+  .searche-button:hover, .card-button:hover, .cta-form-button:hover, .modal-form-button:hover, .button-catalog:hover {
+    background-color: #6F73EE;
+  }
+  .top-block-button:hover {
+    background-color: #fff;
+    color: #6F73EE;
+  }
+  .menu-burger-link:hover,
+  .menu-burger-link:focus-visible {
+    background-color: inherit;
   }
 }
 
