@@ -704,6 +704,7 @@ svg {
   background-color: #6F73EE;
   border: none;
   width: 258px;
+  height: 53px;
   font-size: 16px;
   font-weight: 400;
   color:  #ffffff;
@@ -1007,20 +1008,42 @@ svg {
 }
 
 .modal {
-  display: flex;
-  max-width: 790px;
-  max-height: 590px;
-  margin: auto;
+  opacity:0;
+  visibility:hidden;
+  transform:translateX(-100%);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(41,45,51,0.5);
+  z-index:10;
+  display:flex;
 }
-
+.modal.is-open {
+  transform:translateX(0);
+  visibility:visible;
+  opacity:1;
+}
+.modal.is-open .modal-dialog {
+  transform:translateY(0);
+  opacity:1;
+}
 .modal-dialog {
+  background-color:#fff;
+  margin:auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
+  max-width: 790px;
+  max-height: 590px;
   position: relative;
   padding: 40px 57px 37px 40px;
+  opacity:0;
+  transform:translateY(-20%);
+  transition:transform 0.2s,opacity 0.3s;
 }
+
 
 .modal-close {
   position: absolute;
@@ -1029,7 +1052,7 @@ svg {
 }
 
 .modal-wrapper {
-  width: 285px;
+  width: 284px;
 }
 
 .modal-title {
@@ -1063,6 +1086,10 @@ svg {
   line-height: 17.34px;
   color: #5D6C7B;
   margin: 0 0 17px 0;
+}
+
+.modal-text-thanks {
+  width: 277px;
 }
 
 .modal-form-button {
@@ -1320,13 +1347,16 @@ svg {
     justify-content: center;
   }
   .modal {
-    width: 350px;
+    width: 100%;
   }
   .modal-wrapper {
     width: 200px;
   }
   .modal-text-before {
     margin-bottom: 30px;
+  }
+  .modal-text-thanks {
+    width: 245px;
   }
   .modal-title {
     font-size: 20px;
@@ -1532,6 +1562,9 @@ svg {
     align-items: center;
     width: 400px;
   }
+  .input-group-wrapper-mobile {
+    align-items: start;
+  }
   .modal-form .input-group-wrapper {
     width: 200px;
   }
@@ -1675,5 +1708,23 @@ svg {
   }
   b {
     font-size: 12px;
+  }
+  .input-group-wrapper-mobile {
+    align-items: center;
+    width: 300px;
+  }
+  .cta-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-text-mobile {
+    width: 260px;
+  }
+  .footer-title {
+    margin-bottom: 0;
+    width: 267px;
+    font-size: 22px;
   }
 }

@@ -12,7 +12,7 @@
     <div class="header-top-menu-list">    
       <a href="#" class="header-top-menu">Сервис</a>
       <a href="#" class="header-top-menu">Сотрудничество</a>
-      <a href="#" class="header-top-menu">Заказать звонок</a>
+      <a href="#" class="header-top-menu" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
     </div>
     <div class="header-top-link">
       <a href="#"><img src="img/viber.svg" alt="viber" class="link-icon"></a>
@@ -87,7 +87,7 @@
           <p class="step-text">Проверите лучшие самокаты в деле</p>
         </div>
         </div>
-        <button class="button top-block-button">Записаться</button>
+        <button class="button top-block-button" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
       </div>
     </div>
   </div>
@@ -182,7 +182,7 @@
                 </span>
               </div>
             </div>
-            <button class="button card-button">Записаться на тест-драйв</button>
+            <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
           </div>
         </div>
         <div class="model-card">
@@ -232,7 +232,7 @@
                 </span>
               </div>
             </div>
-            <button class="button card-button">Записаться на тест-драйв</button>
+            <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
           </div>
         </div>
         <div class="model-card">
@@ -282,7 +282,7 @@
                 </span>
               </div>
             </div>
-            <button class="button card-button">Записаться на тест-драйв</button>
+            <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
           </div>
         </div>
         <div class="model-card">
@@ -332,7 +332,7 @@
                 </span>
               </div>
             </div>
-            <button class="button card-button">Записаться на тест-драйв</button>
+            <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
           </div>
         </div>
       </div>
@@ -344,17 +344,17 @@
   <div class="container">
     <div class="form-footer-content">
       <div class="form-footer-text">
-        <form action="#" method="POST" class="cta-form">
+        <form action="handler.php" method="POST" class="form2 cta-form">
           <h1 class="title footer-title">НЕТ НУЖНОЙ МОДЕЛИ, КОТОРУЮ ХОТИТЕ ПРОТЕСТИРОВАТЬ?</h1>
-          <p class="form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
-          <div class="input-group-wrapper">
+          <p class="form-text form-text-mobile">Оставьте заявку, и менеджер подберет нужный самокат</p>
+          <div class="input-group-wrapper input-group-wrapper-mobile">
             <div class="input-group">
-              <input id="user-phone-footer" name="userphone" type="tel" class="input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
+              <input id="user-phone-footer" name="userphone" type="tel" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
             </div>
             <button type="submit" class="button cta-form-button">Оставить заявку на тест-драйв</button>
           </div>
             <div class="notify">
-              <input type="checkbox" id="checkbox1" class="checkbox-notify">
+              <input type="checkbox" class="checkbox-notify" title="#">
               <p class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                 <a href="#" class="link-text">политикой конфиденциальности</a></p>
             </div>
@@ -368,7 +368,7 @@
 <footer>
   <div class="footer-top">
     <h2 class="title-footer-top">ОСТАВЬТЕ СВОЮ ПОЧТУ И СТАНЬТЕ ПЕРВЫМ, КТО ПОЛУЧИТ СКИДКУ НА НОВЫЕ САМОКАТЫ</h2>
-    <form action="#" method="POST" class="cta-form">
+    <form action="handler2.php" method="POST" class="form3 cta-form">
       <div class="input-group-wrapper">
         <div class="input-group">
           <input id="user-email-footer" name="useremail" type="email" class="input-email" placeholder="Введите Ваш email" required>
@@ -443,7 +443,7 @@
           </ul>
         </div>
         <div class="add-link">
-          <a href="#" class="add-link-text">Заказать звонок</a>
+          <a href="#" class="add-link-text" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
         </div>
       </div>
       <hr class="seporator">
@@ -484,45 +484,45 @@
             <a href="#" class="base-footer-doc policy">Политика конфиденциальности</a>
           </div>
           <div class="pay">
-            <a href="#" class="pay-button"><img src="img/Payment-1.png" alt="" class="pay-image"></a>
-            <a href="#" class="pay-button"><img src="img/Payment2.png" alt="" class="pay-image"></a>
-            <a href="#" class="pay-button"><img src="img/Payment3.png" alt="" class="pay-image"></a>
-            <a href="#" class="pay-button"><img src="img/Payment4.png" alt="" class="pay-image"></a>
-            <a href="#" class="pay-button"><img src="img/Payment5.png" alt="" class="pay-image"></a>
-            <a href="#" class="pay-button"><img src="img/Payment6.png" alt="" class="pay-image"></a>
-            <a href="#" class="pay-button"><img src="img/Payment7.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment-1.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment2.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment3.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment4.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment5.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment6.png" alt="" class="pay-image"></a>
+            <a href="#" class="pay-button" title="#"><img src="img/Payment7.png" alt="" class="pay-image"></a>
           </div>
           <div class="online-chat">
             <p class="chat-link">Online чат:</p>
-            <a href="#" class="chat-button"><img src="img/viber2.svg" alt="" class="chat-image"></a>
-            <a href="#" class="chat-button"><img src="img/003-whatsapp 1.svg" alt="" class="chat-image"></a>
-            <a href="#" class="chat-button"><img src="img/003-telegram 1.svg" alt="" class="chat-image"></a>
+            <a href="#" class="chat-button" title="#"><img src="img/viber2.svg" alt="" class="chat-image"></a>
+            <a href="#" class="chat-button" title="#"><img src="img/003-whatsapp 1.svg" alt="" class="chat-image"></a>
+            <a href="#" class="chat-button" title="#"><img src="img/003-telegram 1.svg" alt="" class="chat-image"></a>
           </div>
         </div>
     </div>
   </div>
 </footer>
 
-<div class="modal">
+<div class="modal" id="feedback-modal">
   <div class="modal-dialog">
     <div class="modal-wrapper">
-        <a href="#" class="modal-close">
-          <img src="img/close.svg" alt="закрыть" class="modal-close-image">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+          <img src="img/close.svg" alt="закрыть" class="modal-close-image" id="close">
         </a>
         <h2 class="modal-title">ЗАПИШИТЕСЬ НА ТЕСТ-ДРАЙВ ЭЛЕКТРОСАМОКАТА</h2>
         <p class="modal-text">и подберите модель для себя</p>
         <p class="modal-text-before">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
-          <form class="modal-form">
+          <form action="handler.php" method="POST" class="form modal-form">
             <p class="modal-form-text">Как с вами удобнее связаться?</p>
             <div class="input-group-wrapper input-group-vertical">
               <div class="input-group modal-input-group">
-                <input id="user-phone-footer" name="userphone" type="tel" class="input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
+                <input id="user-phone" name="userphone" type="tel" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
               </div>
             </div>
             <div class="modal-form-footer">
               <button type="submit" class="button modal-form-button">Оформить предзаказ</button>
               <div class="notify notify-modal">
-                <input type="checkbox" id="checkbox1" class="checkbox-notify">
+                <input type="checkbox" class="checkbox-notify" title="#">
                   <p class="notify-text notify-modal-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                     <a href="#" class="link-text-policy">политикой конфиденциальности</a></p>
               </div>
@@ -532,12 +532,12 @@
       <img src="img/modal-image.png" alt="девушка на скутере" class="modal-image">
   </div>
 </div>
- <!-- Временное расположение -->
- <div class="modal modal-thanks">
+
+ <div class="modal modal-thanks" id="alert-modal">
     <div class="modal-dialog modal-dialog-thanks">
       <div class="modal-wrapper">
-        <a href="#" class="modal-close">
-          <img src="img/close.svg" alt="закрыть" class="modal-close-image">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+          <img src="img/close.svg" alt="закрыть" class="modal-close-image" id="close">
         </a>
         <h2 class="modal-title">Спасибо за заявку!</h2>
         <p class="modal-text modal-text-thanks">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
@@ -545,7 +545,9 @@
         <img src="img/modal-image.png" alt="девушка на скутере" class="modal-image">
     </div>
  </div>
-<!-- Временное расположение -->
+
+ 
 <script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/just-validate.production.min.js"></script>
 <script src="js/main.js"></script>
 </body>
