@@ -351,12 +351,12 @@
           <p class="form-text form-text-mobile">Оставьте заявку, и менеджер подберет нужный самокат</p>
           <div class="input-group-wrapper input-group-wrapper-mobile">
             <div class="input-group">
-              <input id="user-phone-footer" name="userphone" type="tel" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
+              <input id="user-phone-footer" name="userphone" type="tel" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" minlength="11" required>
             </div>
             <button type="submit" class="button cta-form-button">Оставить заявку на тест-драйв</button>
           </div>
             <div class="notify">
-              <input type="checkbox" class="checkbox-notify" title="#">
+              <input id="check2" type="checkbox" name="checkbox" class="checkbox-notify" title="#" required>
               <p class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                 <a href="#" class="link-text">политикой конфиденциальности</a></p>
             </div>
@@ -518,13 +518,13 @@
             <p class="modal-form-text">Как с вами удобнее связаться?</p>
             <div class="input-group-wrapper input-group-vertical">
               <div class="input-group modal-input-group">
-                <input id="user-phone" name="userphone" type="tel" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" required>
+                <input id="user-phone" name="userphone" type="tel" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" maxlength="30" minlength="11" required>
               </div>
             </div>
             <div class="modal-form-footer">
               <button type="submit" class="button modal-form-button">Оформить предзаказ</button>
               <div class="notify notify-modal">
-                <input type="checkbox" class="checkbox-notify" title="#">
+                <input id="check" type="checkbox" name="checkbox" class="checkbox-notify" title="#">
                   <p class="notify-text notify-modal-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                     <a href="#" class="link-text-policy">политикой конфиденциальности</a></p>
               </div>

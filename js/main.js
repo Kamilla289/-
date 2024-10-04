@@ -91,6 +91,7 @@ $('#svg_4').on('click', function(){
 	$(this).toggleClass('filled');
 });
 
+
 const button = document.querySelector('.button-catalog')
 const menu = document.querySelector('.menu-burger')
 const menuLinks = document.querySelectorAll('.menu-burger-link')
@@ -108,6 +109,8 @@ button.addEventListener('click', (e) => {
     menuLinks.forEach(link => link.setAttribute('tabindex', '-1'))
   }
 });
+
+
 
 let currentModal;  // текущее модальное окно
 let modalDialog;  // белое диалоговое окно
@@ -136,18 +139,27 @@ modalButtons.forEach((button) => {
   });
 
 
+
+
 const forms = document.querySelectorAll(".form"); //Собираем все формы
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
       errorFieldCssClass: "is-invalid",
   });
   validation
+  .addField('#check', [
+    {
+      rule: "required",
+      errorMessage: "Галочка должна стоять",
+    },
+  ])
     .addField("[name=userphone]", [
       {
         rule: "required",
         errorMessage: "Укажите телефон",
       },
     ])
+   
     .onSuccess((event) => {
       const thisForm = event.target; // наша форма 
       const formData = new FormData(thisForm); // данные из нашей формы
@@ -183,6 +195,12 @@ forms2.forEach((form) => {
       errorFieldCssClass: "is-invalid",
   });
   validation
+  .addField('#check2', [
+    {
+      rule: "required",
+      errorMessage: "Галочка должна стоять",
+    },
+  ])
     .addField("[name=userphone]", [
       {
         rule: "required",
@@ -217,6 +235,7 @@ forms2.forEach((form) => {
 });
 
 
+
 const forms3 = document.querySelectorAll(".form3"); //Собираем все формы
 forms3.forEach((form) => {
   const validation = new JustValidate(form, {
@@ -225,8 +244,12 @@ forms3.forEach((form) => {
   validation
     .addField("[name=useremail]", [
       {
-        rule: "required",
+        rule: 'required',
         errorMessage: "Укажите email",
+      },
+      {
+        rule: 'email',
+        errorMessage: "Неверный email",
       },
     ])
     .onSuccess((event) => {
@@ -255,3 +278,4 @@ forms3.forEach((form) => {
       ajaxSend(formData);
     });
 });
+
